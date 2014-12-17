@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/bitstampBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bitstamp"
+        android:layout_gravity="center"
+        android:textSize="50sp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/bitstampPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Price"
+        android:textSize="25sp"
+        android:textColor="#000000" />
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100">
+        
+        <TextView
+        android:id="@+id/bitstampHighPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="High Price"
+        android:textSize="16sp"
+        android:layout_weight="50"
+        android:textColor="#04b000" />
+
+    <TextView
+        android:id="@+id/bitstampLowPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Low Price"
+        android:textSize="16sp"
+        android:layout_weight="50"
+        android:textColor="#ff0000" />
+        
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bitstampChartBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Bitstamp Chart"
+        android:textSize="15sp"
+        android:textColor="#000000" />
+
+    <WebView
+        android:id="@+id/bitstampMrktChart"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_weight="4.14" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="50" >
+
+        <Button
+            android:id="@+id/bitstampRefreshBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/upperline_button"
+            android:layout_weight="25"
+            android:text="Refresh"
+            android:textSize="30sp" />
+        <Button 
+            android:id="@+id/bitstampMenuBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/upperline_button"
+            android:layout_weight="25"
+            android:text="Menu"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+</LinearLayout>

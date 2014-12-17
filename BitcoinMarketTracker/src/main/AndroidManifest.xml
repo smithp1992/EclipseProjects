@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.market.bitcoinmrkttracker"
+    android:versionCode="3"
+    android:versionName="1.0.2" >
+
+    <!-- 
+    android:minSdkVersion="8"
+    android:targetSdkVersion="17" -->
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="21"
+         />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bitcoin_app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/CustomTheme" >
+        <activity
+            android:name="com.market.bitcoinmrkttracker.BitcoinMarketMenu"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.market.bitcoinmarkets.MtGoxMrkt"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.market.bitcoinmarkets.MTGOXMRKT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.market.bitcoinmarkets.BitstampMrkt"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.market.bitcoinmarkets.BITSTAMPMRKT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.market.bitcoinmarkets.BTCeMrkt"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.market.bitcoinmarkets.BTCEMRKT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.market.bitcoinmarkets.CampBXMrkt"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.market.bitcoinmarkets.CAMPBXMRKT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.market.bitcoinmarkets.LakeBTCMrkt"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.market.bitcoinmarkets.LAKEBTCMRKT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.market.bitcoinmrkttracker.PreferredPrice"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateUnchanged" >
+            <intent-filter>
+                <action android:name="com.market.bitcoinmrkttracker.PREFERREDPRICE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.market.bitcoinmrkttracker.BitcoinNews"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.market.bitcoinmrkttracker.BITCOINNEWS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.market.bitcoinmrkttracker.Preferences"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.market.bitcoinmrkttracker.PREFERENCES" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <receiver android:name="com.market.receiver.Receiver">
+      <intent-filter>
+         <action android:name="android.intent.action.BOOT_COMPLETED">
+      </action>
+      </intent-filter>
+   </receiver>
+    </application>
+
+</manifest>

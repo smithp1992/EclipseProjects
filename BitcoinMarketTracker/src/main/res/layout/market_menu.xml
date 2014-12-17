@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/markets_menu_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bitcoin Markets"
+        android:textSize="35sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:background="@drawable/underline_button"
+        />
+    
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="50" >
+
+    	<Button
+        	android:id="@+id/menu_button_mtGox"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="Mt. Gox"
+        	android:background="@drawable/underline_button"
+        	android:textSize="30sp"
+        	android:layout_weight="25" />
+
+    	<TextView
+    	    android:id="@+id/menu_price_mtGox"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:layout_weight="25"
+    	    android:background="@drawable/underline_button"
+    	    android:text="Price"
+    	    android:textSize="30sp"
+    	    android:gravity="center"
+    	    android:layout_gravity="bottom"
+    	    android:textColor="#ffffff" />
+
+    </LinearLayout>
+    
+    -->
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="50" >
+
+    	<Button
+    	    android:id="@+id/menu_button_bitstamp"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:background="@drawable/underline_button"
+    	    android:text="Bitstamp"
+    	    android:textSize="30sp"
+    	    android:layout_weight="25" />
+    	
+    	<TextView
+    	    android:id="@+id/menu_price_bitstamp"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:background="@drawable/underline_button"
+    	    android:layout_weight="25"
+    	    android:text="Price"
+    	    android:textSize="30sp"
+    	    android:gravity="center"
+    	    android:layout_gravity="bottom"
+    	    android:textColor="#ffffff" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="50" >
+
+    	<Button
+        	android:id="@+id/menu_button_btce"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="BTC-e"
+        	android:background="@drawable/underline_button"
+        	android:textSize="30sp"
+        	android:layout_weight="25" />
+
+    	<TextView
+    	    android:id="@+id/menu_price_btce"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:background="@drawable/underline_button"
+    	    android:layout_weight="25"
+    	    android:text="Price"
+    	    android:textSize="30sp"
+    	    android:gravity="center"
+    	    android:layout_gravity="bottom"
+    	    android:textColor="#ffffff" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="50" >
+
+    	<Button
+        	android:id="@+id/menu_button_campbx"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="Camp BX"
+        	android:background="@drawable/underline_button"
+        	android:textSize="30sp"
+        	android:layout_weight="25" />
+
+    	<TextView
+    	    android:id="@+id/menu_price_campbx"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:background="@drawable/underline_button"
+    	    android:layout_weight="25"
+    	    android:text="Price"
+    	    android:textSize="30sp"
+    	    android:gravity="center"
+    	    android:layout_gravity="bottom"
+    	    android:textColor="#ffffff" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="50" >
+
+    	<Button
+    	    android:id="@+id/menu_button_lakebtc"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:background="@drawable/underline_button"
+    	    android:text="Lake BTC"
+    	    android:textSize="30sp"
+    	    android:layout_weight="25" />
+    	
+    	<TextView
+    	    android:id="@+id/menu_price_lakebtc"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:background="@drawable/underline_button"
+    	    android:layout_weight="25"
+    	    android:text="Price"
+    	    android:textSize="30sp"
+    	    android:gravity="center"
+    	    android:layout_gravity="bottom"
+    	    android:textColor="#ffffff" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    	<Button
+    	    android:id="@+id/menu_button_pref_price"
+    	    android:layout_width="164dp"
+    	    android:layout_height="wrap_content"
+    	    android:gravity="center_horizontal|center_vertical"
+    	    android:background="@drawable/underline_button"
+    	    android:text="Notify Price"
+    	    android:textSize="30sp" />
+
+    	<TextView
+    	    android:id="@+id/menu_price_pref_buy"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:background="@drawable/underline_button"
+    	    android:layout_weight="25"
+    	    android:text="Buy"
+    	    android:textSize="30sp"
+    	    android:gravity="center"
+    	    android:layout_gravity="bottom"
+    	    android:textColor="#00ff00" />
+    	
+    	<TextView
+    	    android:id="@+id/menu_price_pref_sell"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:background="@drawable/underline_button"
+    	    android:layout_weight="25"
+    	    android:text="Sell"
+    	    android:textSize="30sp"
+    	    android:gravity="center"
+    	    android:layout_gravity="bottom"
+    	    android:textColor="#ff0000" />
+
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <Button 
+            android:id="@+id/menu_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="BitNews"
+            android:textSize="30sp"
+            android:background="@drawable/underline_button" />
+        
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+    	<Button
+        	android:id="@+id/menu_preferences"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/underline_button"
+        	android:text="Preferences"
+        	android:textSize="35sp" />
+    
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+		
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    
+    <TextView 
+        android:id="@+id/preferred_price_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/underline_button"
+        android:text="Price Notification"
+        android:textSize="35sp"
+        android:textColor="#000000" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#008000"
+        >
+        <TextView 
+        	android:id="@+id/preferred_buy_banner"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:background="@drawable/underline_button"
+        	android:text="Buy Amount:"
+        	android:textSize="40sp"
+        	android:textColor="#000000" />
+        
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="50" >
+        
+        <ToggleButton
+            android:id="@+id/preferred_buy_toggle"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+        
+        <EditText
+            android:id="@+id/preferred_buy_editTX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Price"
+            android:textColor="#000000"
+            android:inputType="numberDecimal"
+            android:textSize="30sp" />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff0000"
+        >
+        <TextView 
+        	android:id="@+id/preferred_sell_banner"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:background="@drawable/underline_button"
+        	android:text="Sell Amount:"
+        	android:textSize="40sp"
+        	android:textColor="#000000" />
+        
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="50" >
+        
+        <ToggleButton
+            android:id="@+id/preferred_sell_toggle"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+        
+        <EditText
+            android:id="@+id/preferred_sell_editTX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Price"
+            android:textColor="#000000"
+            android:inputType="numberDecimal"
+            android:textSize="30sp" />
+        
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/preferred_current_price_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/underline_button"
+        android:gravity="top|center"
+        android:text="Current Prices"
+        android:textColor="#000000"
+        android:textSize="40sp" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="50"
+        >
+        <TextView 
+        	android:id="@+id/preferred_current_buy_price"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="25"
+        	android:background="@drawable/underline_button"
+        	android:gravity="center"
+        	android:text="Buy:"
+        	android:textSize="35sp"
+        	android:textColor="#008000" />
+        
+        <TextView 
+        	android:id="@+id/preferred_current_sell_price"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="25"
+        	android:background="@drawable/underline_button"
+        	android:gravity="center"
+        	android:text="Sell:"
+        	android:textSize="35sp"
+        	android:textColor="#FF0000" />
+        
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:background="#0000FF" >
+        
+        <TextView
+            android:id="@+id/preferred_price_current_market"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/underline_button"
+            android:text="Current Market"
+            android:textSize="35sp"
+            android:textColor="#FFFFFF" />
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:background="#800080" >
+        
+        <TextView 
+            android:id="@+id/preferred_price_current_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/underline_button"
+            android:text="Current Time"
+            android:textSize="35sp"
+            android:textColor="#FFFFFF" />
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="50" >
+        
+        <Button 
+            android:id="@+id/preferred_price_start_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:background="@drawable/underline_button_side"
+            android:text="Start"
+            android:textSize="35sp" />
+        
+        <Button 
+            android:id="@+id/preferred_price_stop_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:background="@drawable/underline_button"
+            android:text="Stop"
+            android:textSize="35sp" />
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:background="#FF0000" >
+        
+        <TextView 
+            android:id="@+id/preferred_price_alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/underline_button"
+            android:text="Alarm: OFF"
+            android:textSize="35sp"
+            android:textColor="#FFFFFF" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:weightSum="50" >
+        
+        <Button
+            android:id="@+id/preferred_price_saveBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="25"
+            android:background="@drawable/underline_button_side"
+            android:text="Save"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/preferred_price_menuBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="25"
+            android:background="@drawable/underline_button"
+            android:text="Menu"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

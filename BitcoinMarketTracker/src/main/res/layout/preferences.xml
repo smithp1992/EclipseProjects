@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000FF"
+        >
+        <TextView 
+        	android:id="@+id/preferences_market_banner"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:background="@drawable/underline_button"
+        	android:text="Select Market"
+        	android:textSize="35sp"
+        	android:textColor="#FFFFFF" />
+        
+        
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="50"
+        >
+
+        <ToggleButton
+            android:id="@+id/preferences_toggle_bitstamp"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:text="ToggleButton" />
+        
+        <TextView
+            android:id="@+id/preferences_bitstamp_market"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underline_button"
+            android:gravity="center"
+            android:layout_weight="10"
+            android:text="Bitstamp"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="50"
+        >
+
+        <ToggleButton
+            android:id="@+id/preferences_toggle_btce"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:text="ToggleButton" />
+        
+        <TextView
+            android:id="@+id/preferences_btce_market"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underline_button"
+            android:gravity="center"
+            android:layout_weight="10"
+            android:text="BTC-e"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="50"
+        >
+
+        <ToggleButton
+            android:id="@+id/preferences_toggle_campbx"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:text="ToggleButton" />
+        
+        <TextView
+            android:id="@+id/preferences_campbx_market"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underline_button"
+            android:gravity="center"
+            android:layout_weight="10"
+            android:text="Camp BX"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="50"
+        >
+
+        <ToggleButton
+            android:id="@+id/preferences_toggle_lakebtc"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:text="ToggleButton" />
+        
+        <TextView
+            android:id="@+id/preferences_lakebtc_market"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underline_button"
+            android:gravity="center"
+            android:layout_weight="10"
+            android:text="Lake BTC"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#800080"
+        >
+        <TextView 
+        	android:id="@+id/preferences_time_banner"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:background="@drawable/underline_button"
+        	android:text="Update Time"
+        	android:textSize="35sp"
+        	android:textColor="#FFFFFF" />
+        
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="50"
+        >
+        
+        <Button
+            android:id="@+id/preferences_time_30_sec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underline_button_side"
+            android:gravity="center"
+            android:layout_weight="25"
+            android:text="30sec"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+        <Button
+            android:id="@+id/preferences_time_1_min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underline_button_side"
+            android:gravity="center"
+            android:layout_weight="25"
+            android:text="1min"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="50"
+        >
+        
+        <Button
+            android:id="@+id/preferences_time_5_mins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underline_button_side"
+            android:gravity="center"
+            android:layout_weight="25"
+            android:text="5min"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+        
+        <Button
+            android:id="@+id/preferences_time_30_mins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underline_button_side"
+            android:gravity="center"
+            android:layout_weight="25"
+            android:text="30min"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="50"
+        >
+        
+        <Button
+            android:id="@+id/preferences_time_1_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underline_button_side"
+            android:gravity="center"
+            android:layout_weight="25"
+            android:text="1hour"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+        
+        <Button
+            android:id="@+id/preferences_time_6_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underline_button_side"
+            android:gravity="center"
+            android:layout_weight="25"
+            android:text="6hours"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="50"
+        >
+        
+        <Button
+            android:id="@+id/preferences_time_12_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underline_button_side"
+            android:gravity="center"
+            android:layout_weight="25"
+            android:text="12hours"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+        
+        <Button
+            android:id="@+id/preferences_time_1_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underline_button_side"
+            android:gravity="center"
+            android:layout_weight="25"
+            android:text="1day"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="50"
+        >
+        
+        <Button
+            android:id="@+id/preferences_time_7_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underline_button_side"
+            android:gravity="center"
+            android:layout_weight="25"
+            android:text="7days"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+        
+        <Button
+            android:id="@+id/preferences_time_14_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/underline_button_side"
+            android:gravity="center"
+            android:layout_weight="25"
+            android:text="14days"
+            android:textColor="#000000"
+            android:textSize="35sp" />
+
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:weightSum="50"
+        >
+        <Button 
+        	android:id="@+id/preferences_save_bt"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:background="@drawable/underline_button"
+        	android:text="Save"
+        	android:layout_weight="25"
+        	android:textSize="35sp"
+        	android:textColor="#000000" />
+        
+        <Button 
+        	android:id="@+id/preferences_menu_bt"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:gravity="center"
+        	android:background="@drawable/underline_button"
+        	android:text="Menu"
+        	android:layout_weight="25"
+        	android:textSize="35sp"
+        	android:textColor="#000000" />
+        
+        
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

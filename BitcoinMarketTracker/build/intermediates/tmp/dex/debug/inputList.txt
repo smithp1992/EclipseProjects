@@ -1,0 +1,4 @@
+C:\Users\Philip\AndroidStudioProjects\EclipseProjects\BitcoinMarketTracker\build\intermediates\classes\debug
+C:\Users\Philip\AndroidStudioProjects\EclipseProjects\BitcoinMarketTracker\build\intermediates\pre-dexed\debug\support-annotations-21.0.2-03f0d00b2c2c1749b2abc9ea849bce1335cb6af1.jar
+C:\Users\Philip\AndroidStudioProjects\EclipseProjects\BitcoinMarketTracker\build\intermediates\pre-dexed\debug\internal_impl-21.0.2-55b4ec3bb5fc686216e8f6c82d287ba1e639f94f.jar
+C:\Users\Philip\AndroidStudioProjects\EclipseProjects\BitcoinMarketTracker\build\intermediates\pre-dexed\debug\classes-0e1ba7eb0a81d2be237a56cb8217f2baae25cc91.jar

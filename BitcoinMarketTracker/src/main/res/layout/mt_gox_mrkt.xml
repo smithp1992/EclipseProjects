@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+
+    <TextView
+        android:id="@+id/mtGoxBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Mt. Gox"
+        android:textSize="50sp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/mtGoxPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Price"
+        android:textSize="25sp"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/mtGoxHighPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:text="High Price"
+            android:textColor="#04b000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/mtGoxLowPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:text="LowPrice"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/mtGoxToBTCeSpread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:gravity="left"
+            android:text="BTCeSpread"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/mtGoxToBitstampSpread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:gravity="right"
+            android:text="BitstampSpread"
+            android:textSize="16sp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mtGoxChartBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Mt. Gox Chart"
+        android:textSize="15sp"
+        android:textColor="#000000" />
+
+    <WebView
+        android:id="@+id/mtGoxMrktChart"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_weight="4.14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="50" >
+
+        <Button
+            android:id="@+id/mtGoxRefreshBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/upperline_button"
+            android:layout_weight="25"
+            android:text="Refresh"
+            android:textSize="30sp" />
+        <Button 
+            android:id="@+id/mtGoxMenuBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/upperline_button"
+            android:layout_weight="25"
+            android:text="Menu"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+</LinearLayout>
